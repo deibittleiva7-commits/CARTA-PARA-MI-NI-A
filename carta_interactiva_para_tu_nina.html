@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para mi niña hermosa 🤍</title>
+<style>
+  *{box-sizing:border-box}
+  body{
+    margin:0; min-height:100vh; overflow:hidden;
+    font-family: Georgia, "Times New Roman", serif;
+    background: radial-gradient(circle at top, #fff7fb 0%, #f8dce9 45%, #d9b8cf 100%);
+    color:#4b3141;
+  }
+  .hearts span{
+    position:fixed; bottom:-40px; font-size:22px; opacity:.65;
+    animation:float 9s linear infinite; pointer-events:none;
+  }
+  .hearts span:nth-child(1){left:8%;animation-delay:0s}.hearts span:nth-child(2){left:20%;animation-delay:2s}
+  .hearts span:nth-child(3){left:35%;animation-delay:4s}.hearts span:nth-child(4){left:55%;animation-delay:1s}
+  .hearts span:nth-child(5){left:72%;animation-delay:5s}.hearts span:nth-child(6){left:88%;animation-delay:3s}
+  @keyframes float{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+  .book{
+    width:min(92vw,760px); height:min(88vh,720px);
+    margin:auto; position:absolute; inset:0;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .page{
+    position:absolute; width:100%; height:100%; padding:44px 38px 72px;
+    background:rgba(255,252,250,.94);
+    border:1px solid rgba(255,255,255,.8);
+    border-radius:24px;
+    box-shadow:0 25px 70px rgba(91,47,75,.25);
+    display:none; flex-direction:column; justify-content:center; text-align:center;
+    animation:pageIn .55s ease;
+  }
+  .page.active{display:flex}
+  @keyframes pageIn{from{opacity:0;transform:translateX(35px) scale(.98)}to{opacity:1;transform:none}}
+  .cover{
+    background:linear-gradient(145deg,#fff9fc,#f7d8e8);
+  }
+  .tiny{font-size:14px;letter-spacing:3px;text-transform:uppercase;opacity:.65}
+  h1{font-size:clamp(34px,7vw,64px);margin:16px 0 8px;color:#8b4268}
+  h2{font-size:clamp(25px,5vw,39px);margin:0 0 22px;color:#8b4268}
+  p{font-size:clamp(17px,2.7vw,21px);line-height:1.75;margin:10px auto;max-width:650px}
+  .date{font-size:18px;margin-top:12px}
+  .heart{font-size:72px;animation:pulse 1.7s infinite}
+  @keyframes pulse{50%{transform:scale(1.13)}}
+  .next{
+    position:absolute; bottom:24px; left:50%; transform:translateX(-50%);
+    border:0; padding:13px 28px; border-radius:999px;
+    background:#9c4f78;color:white;font-size:16px;cursor:pointer;
+    box-shadow:0 8px 20px rgba(156,79,120,.3);
+  }
+  .next:hover{transform:translateX(-50%) translateY(-2px)}
+  .counter{position:absolute;top:17px;right:23px;font-size:13px;opacity:.5}
+  .signature{margin-top:24px;font-size:20px;font-style:italic}
+  .sparkle{font-size:28px}
+  .final h2{font-size:clamp(30px,6vw,48px)}
+  @media(max-width:520px){
+    .book{height:91vh;width:94vw}.page{padding:38px 22px 70px}
+    p{line-height:1.58}
+  }
+</style>
+</head>
+<body>
+<div class="hearts"><span>🤍</span><span>♡</span><span>🤍</span><span>♡</span><span>🤍</span><span>♡</span></div>
+
+<div class="book">
+
+<section class="page active cover">
+  <div class="heart">🤍</div>
+  <div class="tiny">Una pequeña sorpresa para ti</div>
+  <h1>Para mi niña hermosa</h1>
+  <div class="date">5 de septiembre 🎂</div>
+  <p>Hay cartas que se leen de una vez…<br>y otras que se van descubriendo poquito a poquito.</p>
+  <button class="next">Abrir mi carta ✨</button>
+  <div class="counter">1 / 7</div>
+</section>
+
+<section class="page">
+  <div class="sparkle">✨</div>
+  <h2>Primero… feliz cumpleaños 🥹🤍</h2>
+  <p>La verdad no sabía muy bien qué regalarte, así que decidí escribirte esto.</p>
+  <p>No sé si me vaya a salir perfecto, pero prefiero que sea algo mío y decirte las cosas como me salen.</p>
+  <button class="next">Siguiente →</button><div class="counter">2 / 7</div>
+</section>
+
+<section class="page">
+  <h2>Qué loco cómo empezó todo… 🎮</h2>
+  <p>Es raro pensar que hace solamente 7 días no sabía ni que ibas a aparecer en mi vida y ahora ya eres alguien con quien me encanta hablar todos los días.</p>
+  <p>Nos conocimos jugando Free Fire, algo que jamás pensé que iba a terminar haciendo que conociera a alguien como tú.</p>
+  <button class="next">Siguiente →</button><div class="counter">3 / 7</div>
+</section>
+
+<section class="page">
+  <h2>Y después pasó esto… 🌙</h2>
+  <p>Desde que empezamos a hablar sentí que conectábamos demasiado bien.</p>
+  <p>Podíamos estar hablando de cualquier cosa, jugando o simplemente diciendo puras tonteras y aun así me lo pasaba demasiado bien contigo.</p>
+  <p>Todavía me acuerdo de esa noche en la que terminamos hablando y riéndonos hasta como las 3 de la mañana jajaja.</p>
+  <button class="next">Siguiente →</button><div class="counter">4 / 7</div>
+</section>
+
+<section class="page">
+  <h2>Ahora viene la parte difícil de decir… 🤍</h2>
+  <p><strong>Me gustas.</strong></p>
+  <p>Pero no quiero que por eso sientas que tienes que darme una respuesta ahora, ni que tengas que sentir algo parecido obligatoriamente.</p>
+  <p>No quiero apresurar nada entre nosotros. Me gusta demasiado la forma en que nos estamos conociendo y prefiero que las cosas vayan pasando de a poquito y de manera natural.</p>
+  <button class="next">Siguiente →</button><div class="counter">5 / 7</div>
+</section>
+
+<section class="page">
+  <h2>Lo que me gusta de ti 🌷</h2>
+  <p>Me gusta mucho tu sonrisa, me encantan tus ojos y, aunque eres muy bonita, creo que lo que más me ha gustado de ti es la persona que he podido conocer estos días.</p>
+  <p>Tienes un corazón muy bonito y se nota que eres una persona especial.</p>
+  <p>Y sí… quizás decirte “mi niña hermosa” después de tan poquito tiempo suene un poquito loco jajaja, pero me nace decirte así. 🤍</p>
+  <button class="next">Siguiente →</button><div class="counter">6 / 7</div>
+</section>
+
+<section class="page final">
+  <div class="heart">💗</div>
+  <h2>Y para terminar…</h2>
+  <p>No sé qué va a pasar después de estos días, ni quiero intentar adivinarlo.</p>
+  <p>Solo sé que me alegra muchísimo haberte conocido y que cada vez que hablamos terminas haciendo que mi día sea un poquito mejor.</p>
+  <p>Espero que este nuevo año de tu vida venga lleno de cosas bonitas, momentos que te hagan feliz y personas que sepan valorar lo linda que eres, por dentro y por fuera.</p>
+  <p><strong>Y espero poder seguir siendo parte de algunos de esos momentos.</strong></p>
+  <p>Gracias por aparecer de la forma más inesperada: en una partida de Free Fire. 😂❤️</p>
+  <div class="signature">Feliz cumpleaños, mi niña hermosa.<br>Con mucho cariño,<br><strong>Deibitt 🤍</strong></div>
+  <button class="next" onclick="restart()">Volver a leer ↺</button>
+  <div class="counter">7 / 7</div>
+</section>
+
+</div>
+
+<script>
+const pages=[...document.querySelectorAll('.page')];
+let current=0;
+function showPage(n){
+  pages[current].classList.remove('active');
+  current=n;
+  pages[current].classList.add('active');
+}
+document.querySelectorAll('.next').forEach((btn,i)=>{
+  if(i<pages.length-1) btn.addEventListener('click',()=>showPage(current+1));
+});
+function restart(){showPage(0)}
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight' && current<pages.length-1) showPage(current+1);
+  if(e.key==='ArrowLeft' && current>0) showPage(current-1);
+});
+</script>
+</body>
+</html>
